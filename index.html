@@ -83,6 +83,9 @@
 	    dashboard.worksheets.forEach(function (worksheet) {
 	      $("#selectWorksheet").append("<option value='" + worksheet.name + "'>" + worksheet.name + "</option>");
 	    });
+		  
+		console.log('----- Test $("#selectWorksheet") -----');//debug output
+		console.log($("#selectWorksheet"));//debug output
 
 	    // If there is a worksheet saved in the settings, then update the sheets
 	    // dropdown and then populates the value. After which call the updateColumns
